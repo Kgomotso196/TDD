@@ -15,4 +15,18 @@ describe Solver do
       expect { Solver.new.factorial(-1) }.to raise_error(ArgumentError)
     end
   end
+
+  describe '#reverse' do
+    it 'returns "olleh" for input "hello"' do
+        expect(Solver.new.reverse("hello")).to eq("olleh")
+    end
+
+    it 'returns "" for an empty string' do
+        expect(Solver.new.reverse("")).to eq("")
+    end
+
+    it 'returns the same character for a single character string' do
+        expect(Solver.new.reverse("a")).to eq("a")
+    end
+  end
 end
