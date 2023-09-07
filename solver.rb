@@ -1,9 +1,9 @@
 class Solver
-    def factorial(n)
-      raise ArgumentError, "Input must be a non-negative integer" if n < 0
+  def factorial(number)
+    raise ArgumentError, 'Input must be a non-negative integer' if number.negative?
 
-      return 1 if n == 0
+    return 1 if number.zero?
 
-      (1..n).inject(:*)
-    end
+    (1..number).inject(:*)
   end
+end
