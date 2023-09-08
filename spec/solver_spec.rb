@@ -30,13 +30,13 @@ describe Solver do
     end
     describe '#fizzbuzz' do
       it 'returns Fizzbuzz when given 15' do
-        expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
+        expect(Solver.new.fizzbuzz(15)).to eq('fizzbuzz')
       end
       it 'returns Fizz when given 3' do
-        expect(solver.fizzbuzz(3)).to eq('fizz')
+        expect(Solver.new.fizzbuzz(3)).to eq('fizz')
       end
       it 'returns Buzz when given 5' do
-        expect(solver.fizzbuzz(5)).to eq('buzz')
+        expect(Solver.new.fizzbuzz(5)).to eq('buzz')
       end
     end
   end
