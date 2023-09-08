@@ -10,6 +10,7 @@ class Solver
   def reverse(word)
     word.reverse
   end
+
   def fizzbuzz(number)
     if (number % 15).zero?
       'fizzbuzz'
