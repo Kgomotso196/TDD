@@ -28,5 +28,18 @@ describe Solver do
     it 'returns the same character for a single character string' do
       expect(Solver.new.reverse('a')).to eq('a')
     end
+    describe '#fizzbuzz' do
+        it 'returns Fizzbuzz when given 15' do
+          expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
+        end
+        it 'returns Fizz when given 3' do
+          expect(solver.fizzbuzz(3)).to eq('fizz')
+        end
+        it 'returns Buzz when given 5' do
+          expect(solver.fizzbuzz(5)).to eq('buzz')
+        end
+      end
   end
 end
+
+
