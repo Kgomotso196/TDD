@@ -1,4 +1,4 @@
-require_relative 'solver'
+require_relative '../solver'
 require 'rspec'
 
 describe Solver do
